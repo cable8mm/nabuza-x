@@ -1,0 +1,20 @@
+info face="font" size=45 bold=0 italic=0 charset="" unicode=0 stretchH=100 smooth=1 aa=1 padding=0,0,0,0 spacing=1,1
+common lineHeight=69 base=26 scaleW=128 scaleH=128 pages=1 packed=0
+page id=0 file="font_brown_45.png"
+chars count=14
+char id=32   x=0     y=0     width=0     height=0     xoffset=0     yoffset=55    xadvance=26     page=0  chnl=0 
+char id=48   x=0     y=0     width=37     height=37     xoffset=0     yoffset=19    xadvance=35     page=0  chnl=0 
+char id=57   x=37     y=0     width=28     height=37     xoffset=0     yoffset=19    xadvance=26     page=0  chnl=0 
+char id=56   x=65     y=0     width=26     height=37     xoffset=0     yoffset=19    xadvance=24     page=0  chnl=0 
+char id=55   x=91     y=0     width=28     height=37     xoffset=0     yoffset=19    xadvance=26     page=0  chnl=0 
+char id=54   x=0     y=37     width=28     height=37     xoffset=0     yoffset=19    xadvance=26     page=0  chnl=0 
+char id=53   x=28     y=37     width=26     height=37     xoffset=0     yoffset=19    xadvance=24     page=0  chnl=0 
+char id=52   x=54     y=37     width=28     height=37     xoffset=0     yoffset=19    xadvance=26     page=0  chnl=0 
+char id=51   x=82     y=37     width=27     height=37     xoffset=0     yoffset=19    xadvance=25     page=0  chnl=0 
+char id=50   x=0     y=74     width=27     height=37     xoffset=0     yoffset=19    xadvance=25     page=0  chnl=0 
+char id=49   x=27     y=74     width=15     height=37     xoffset=0     yoffset=19    xadvance=13     page=0  chnl=0 
+char id=43   x=42     y=74     width=23     height=24     xoffset=0     yoffset=26    xadvance=22     page=0  chnl=0 
+char id=44   x=65     y=74     width=10     height=19     xoffset=0     yoffset=46    xadvance=9     page=0  chnl=0 
+char id=46   x=75     y=74     width=10     height=10     xoffset=0     yoffset=46    xadvance=9     page=0  chnl=0 
+char id=45   x=85     y=74     width=23     height=10     xoffset=0     yoffset=33    xadvance=22     page=0  chnl=0 
+kernings count=-1
