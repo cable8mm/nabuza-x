@@ -9,9 +9,8 @@
 #ifndef __NabuzaI__Facebook__
 #define __NabuzaI__Facebook__
 
-#import <UIKit/UIKit.h>
 #import <FacebookSDK/FacebookSDK.h>
-
+#import <UIKit/UIKit.h>
 
 // Standard Types
 typedef char i8;
@@ -32,11 +31,9 @@ static const u64 kuFBAppID = 425937460847689;
 
 class Facebook {
 private:
-    
 public:
     void FB_CreateNewSession();
     void FB_Login();
-    
 };
 
 #endif /* defined(__NabuzaI__Facebook__) */

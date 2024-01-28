@@ -13,13 +13,13 @@
 
 USING_NS_CC;
 
-class AlertLayer : public cocos2d::CCLayerColor
-{
+class AlertLayer : public cocos2d::CCLayerColor {
 public:
     static AlertLayer *sharedAlertLayer(void);
-//    static AlertLayer *createWithMessage(std::string title, std::string message);
+    //    static AlertLayer *createWithMessage(std::string title, std::string
+    //    message);
     void show(std::string title, std::string message);
-    
+
 private:
     std::string title;
     std::string message;

@@ -12,11 +12,11 @@
 #include "cocos2d.h"
 USING_NS_CC;
 
-class BuyJadeButtonSprite : public cocos2d::CCSprite
-{
+class BuyJadeButtonSprite : public cocos2d::CCSprite {
 private:
     unsigned int key;
     bool isActive;
+
 public:
     static BuyJadeButtonSprite* createWithItemKey(unsigned int key);
     static BuyJadeButtonSprite* createWithItemKeyTapped(unsigned int key);

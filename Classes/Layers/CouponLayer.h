@@ -9,16 +9,15 @@
 #ifndef __NabuzaI__CouponLayer__
 #define __NabuzaI__CouponLayer__
 
-#include "cocos2d.h"
 #include "cocos-ext.h"
+#include "cocos2d.h"
 USING_NS_CC;
 USING_NS_CC_EXT;
 
-class CouponLayer : public cocos2d::CCLayerColor
-{
+class CouponLayer : public cocos2d::CCLayerColor {
 public:
     CREATE_FUNC(CouponLayer);
-    
+
 private:
     std::stringstream couponNumber;
     void addCouponNumber(int v);

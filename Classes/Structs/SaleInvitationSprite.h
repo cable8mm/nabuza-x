@@ -12,8 +12,7 @@
 #include "cocos2d.h"
 USING_NS_CC;
 
-class SaleInvitationSprite : public cocos2d::CCSprite
-{
+class SaleInvitationSprite : public cocos2d::CCSprite {
 private:
 public:
     int key;

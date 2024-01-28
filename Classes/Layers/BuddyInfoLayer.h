@@ -9,16 +9,14 @@
 #ifndef __NabuzaI__BuddyInfoLayer__
 #define __NabuzaI__BuddyInfoLayer__
 
-#include "cocos2d.h"
-#include "cocos-ext.h"
-
 #include "BuddyModel.h"
+#include "cocos-ext.h"
+#include "cocos2d.h"
 
 USING_NS_CC;
 USING_NS_CC_EXT;
 
-class BuddyInfoLayer : public cocos2d::CCLayerColor
-{
+class BuddyInfoLayer : public cocos2d::CCLayerColor {
 private:
     int playerKey;
     BuddyModel *buddyModel;
@@ -27,6 +25,7 @@ private:
     void close();
     void onHttpRequestCompleted(CCHttpClient *sender, CCHttpResponse *response);
     void registerWithTouchDispatcher();
+
 public:
     static BuddyInfoLayer *createWithPlayerKey(int PlayerKey);
     static BuddyInfoLayer *createWithBuddyKey(int BuddyKey);

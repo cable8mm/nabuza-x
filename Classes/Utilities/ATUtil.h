@@ -19,7 +19,9 @@ using std::string;
 class ATUtil {
 public:
     static float agy(float y);
-    static void insert_separator(string& s, char separator = ',', int width = 3);   // http://kldp.org/node/38269#comment-125583
+    static void insert_separator(
+        string& s, char separator = ',',
+        int width = 3);  // http://kldp.org/node/38269#comment-125583
 };
 
 unsigned int GetClockCount();

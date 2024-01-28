@@ -8,28 +8,25 @@
 
 #include "BuddyStorage.h"
 
-static BuddyStorage *s_SharedBuddyStorage = NULL;
+static BuddyStorage* s_SharedBuddyStorage = NULL;
 
 BuddyStorage::BuddyStorage() {
-    this->buddies   = new CCArray;
+    this->buddies = new CCArray;
 }
 
 BuddyStorage::~BuddyStorage() {
-    delete(this->buddies);
+    delete (this->buddies);
 }
 
-BuddyStorage* BuddyStorage::sharedBuddyStorage(void)
-{
-    if (!s_SharedBuddyStorage)
-    {
+BuddyStorage* BuddyStorage::sharedBuddyStorage(void) {
+    if (!s_SharedBuddyStorage) {
         s_SharedBuddyStorage = new BuddyStorage();
         s_SharedBuddyStorage->init();
     }
-    
+
     return s_SharedBuddyStorage;
 }
 
-bool BuddyStorage::init()
-{
+bool BuddyStorage::init() {
     return true;
 }

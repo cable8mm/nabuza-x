@@ -12,8 +12,7 @@
 #include "cocos2d.h"
 USING_NS_CC;
 
-class PlusMaxSprite : public cocos2d::CCSprite
-{
+class PlusMaxSprite : public cocos2d::CCSprite {
 private:
 public:
     static PlusMaxSprite *create();

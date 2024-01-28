@@ -9,14 +9,13 @@
 #ifndef __NabuzaI__NoticeLayer__
 #define __NabuzaI__NoticeLayer__
 
-#include "cocos2d.h"
 #include "cocos-ext.h"
+#include "cocos2d.h"
 
 USING_NS_CC;
 USING_NS_CC_EXT;
 
-class NoticeLayer : public cocos2d::CCLayerColor, public CCScrollViewDelegate
-{
+class NoticeLayer : public cocos2d::CCLayerColor, public CCScrollViewDelegate {
 private:
     int currentNoticeIdx;
     CCArray *notices;
@@ -24,11 +23,12 @@ private:
     void viewContents();
     bool ccTouchBegan(CCTouch *pTouch, CCEvent *pEvent);
     void registerWithTouchDispatcher();
-    
-#pragma -- CCScrollViewDelegate
-    
-    void scrollViewDidScroll(CCScrollView* view);
-    void scrollViewDidZoom(CCScrollView* view);
+
+#pragma-- CCScrollViewDelegate
+
+    void scrollViewDidScroll(CCScrollView *view);
+    void scrollViewDidZoom(CCScrollView *view);
+
 public:
     CREATE_FUNC(NoticeLayer);
     void onEnter();

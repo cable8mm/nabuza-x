@@ -13,12 +13,12 @@
 
 USING_NS_CC;
 
-class IndicationLayer : public cocos2d::CCLayerColor
-{
+class IndicationLayer : public cocos2d::CCLayerColor {
 private:
     bool init();
     void registerWithTouchDispatcher();
     bool ccTouchBegan(CCTouch *touch, CCEvent *pEvent);
+
 public:
     CREATE_FUNC(IndicationLayer);
     void onEnter();

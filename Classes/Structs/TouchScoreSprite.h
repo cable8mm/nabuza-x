@@ -12,12 +12,13 @@
 #include "cocos2d.h"
 USING_NS_CC;
 
-class TouchScoreSprite : public cocos2d::CCLabelBMFont
-{
+class TouchScoreSprite : public cocos2d::CCLabelBMFont {
 public:
-    static TouchScoreSprite* createWithXY(float x, float y, int addGameScore, int multiplyConstant = 0, int nabuzaTimeConstant = 0);
+    static TouchScoreSprite* createWithXY(float x, float y, int addGameScore,
+                                          int multiplyConstant = 0,
+                                          int nabuzaTimeConstant = 0);
     void show();
-    
+
 private:
     void removeCallback();
 };

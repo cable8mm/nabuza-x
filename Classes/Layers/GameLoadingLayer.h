@@ -9,27 +9,25 @@
 #ifndef __NabuzaI__GameLoadingLayer__
 #define __NabuzaI__GameLoadingLayer__
 
-#include "cocos2d.h"
 #include "cocos-ext.h"
+#include "cocos2d.h"
 
 USING_NS_CC;
 USING_NS_CC_EXT;
 
-enum eGamePlayerLevels
-{
+enum eGamePlayerLevels {
     kGAMEPLAYERLEVEL_BEGINNER,
     kGAMEPLAYERLEVEL_ADVANCED,
     kGAMEPLAYERLEVEL_EXPERT
 };
 
-class GameLoadingLayer : public cocos2d::CCLayerColor
-{
+class GameLoadingLayer : public cocos2d::CCLayerColor {
 private:
     eGamePlayerLevels playerLevel;
     bool init();
 
 public:
-    static GameLoadingLayer* createWithLevel(eGamePlayerLevels level);
+    static GameLoadingLayer *createWithLevel(eGamePlayerLevels level);
     void onEnter();
     void close();
     CREATE_FUNC(GameLoadingLayer);
@@ -39,7 +37,7 @@ public:
 class GameEnterLevelSprite : public cocos2d::CCSprite {
 private:
     std::string imageName;
-    
+
 public:
     static GameEnterLevelSprite *createWithLevel(eGamePlayerLevels level);
     void onAnimating();
@@ -49,6 +47,7 @@ public:
 class GameEnterLevelFaceSprite : public cocos2d::CCSprite {
 private:
     std::string imageName;
+
 public:
     static GameEnterLevelFaceSprite *createWithLevel(eGamePlayerLevels level);
     void onAnimating();

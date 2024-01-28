@@ -9,18 +9,16 @@
 #ifndef __NabuzaI__ItemSelectionLayer__
 #define __NabuzaI__ItemSelectionLayer__
 
-
 #include "cocos2d.h"
 using namespace cocos2d;
 #include "ItemChoosedSprite.h"
 #include "ItemSprite.h"
 
-class ItemSelectionLayer : public cocos2d::CCLayerColor
-{
+class ItemSelectionLayer : public cocos2d::CCLayerColor {
 public:
     ItemSelectionLayer();
     ~ItemSelectionLayer();
-    
+
     CCArray *itemButtonSprites;
     ItemSprite *selectedItemSprite;
     CCArray *itemChoosedSprites;
@@ -29,7 +27,7 @@ public:
     bool init();
 
     CREATE_FUNC(ItemSelectionLayer);
-    
+
 private:
     bool ccTouchBegan(CCTouch *pTouch, CCEvent *pEvent);
     void ccTouchEnded(CCTouch *pTouch, CCEvent *pEvent);

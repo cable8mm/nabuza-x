@@ -17,19 +17,18 @@ private:
     bool init();
     unsigned int jadeCount;
     int cardCount;
-    
+
 public:
     NeedForGameMemory();
     static NeedForGameMemory* sharedNeedForGameMemory(void);
     void reset();
     void addJadeCount(unsigned int v);
     void minusJadeCount(unsigned int v);
-// Getters / Setters
+    // Getters / Setters
     void setJadeCount(unsigned int v);
     unsigned int getJadeCount();
     void setCardCount(int v);
     unsigned int getCardCount();
 };
-
 
 #endif /* defined(__NabuzaI__NeedForGameMemory__) */

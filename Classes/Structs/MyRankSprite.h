@@ -12,10 +12,10 @@
 #include "cocos2d.h"
 USING_NS_CC;
 
-class MyRankSprite : public cocos2d::CCSprite
-{
+class MyRankSprite : public cocos2d::CCSprite {
 private:
     void onEnter();
+
 public:
     static MyRankSprite *create();
     void startAnimation();

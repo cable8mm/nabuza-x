@@ -12,10 +12,10 @@
 #include "cocos2d.h"
 USING_NS_CC;
 
-class SwitchSprite : public cocos2d::CCSprite
-{
+class SwitchSprite : public cocos2d::CCSprite {
 private:
     bool v;
+
 public:
     static SwitchSprite* createWithValue(bool v);
     bool getValue();

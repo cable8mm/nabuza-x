@@ -9,17 +9,16 @@
 #ifndef __NabuzaI__InviteFriendLayer__
 #define __NabuzaI__InviteFriendLayer__
 
-#include "cocos2d.h"
 #include "cocos-ext.h"
+#include "cocos2d.h"
 
 USING_NS_CC;
 USING_NS_CC_EXT;
 
-class InviteFriendLayer : public cocos2d::CCLayerColor
-{
+class InviteFriendLayer : public cocos2d::CCLayerColor {
 public:
     CREATE_FUNC(InviteFriendLayer);
-    
+
 private:
     std::string kakaotalkMessage;
     std::string smsMessage;
@@ -33,7 +32,7 @@ private:
     bool ccTouchBegan(CCTouch *touch, CCEvent *pEvent);
     void ccTouchCancelled(CCTouch *touch, CCEvent *pEvent);
     void ccTouchEnded(CCTouch *touch, CCEvent *event);
-    
+
     void registerWithTouchDispatcher();
 };
 
