@@ -17,3 +17,7 @@ jobs:
         uses: antoinealb/clang-format-action@clang9
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Set ownership
+        run: |
+          git config --global --add safe.directory /github/workspace
