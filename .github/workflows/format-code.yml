@@ -1,4 +1,4 @@
-name: "format code"
+name: clang-format Code Formatter
 
 # run on pull requests to develop
 on:
@@ -9,22 +9,11 @@ on:
     branches: ["main"]
 
 jobs:
-  format:
+  lint:
+    name: clang-format Code Formatter
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v4
-        with:
-          ref: ${{ github.head_ref }}
-          fetch-depth: 2
-      # format the latest commit
-      - name: Format code
-        uses: purduesigbots/clang-format-action@main
-        with:
-          style: file
-      # commit the changes
-      - name: Commit changes
-        uses: stefanzweifel/git-auto-commit-action@v4
-        with:
-          commit_message: 🎨 apply clang-format changes
-          branch: ${{ github.head_ref }}
+      - name: Clang Code Formatter
+        uses: antoinealb/clang-format-action@clang9
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
