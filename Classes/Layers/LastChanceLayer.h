@@ -12,11 +12,10 @@
 #include "cocos2d.h"
 using namespace cocos2d;
 
-class LastChanceLayer : public cocos2d::CCLayerColor
-{
+class LastChanceLayer : public cocos2d::CCLayerColor {
 public:
     CREATE_FUNC(LastChanceLayer);
-    
+
 private:
     CCSprite *playSpeechSprite;
     bool init();

@@ -12,19 +12,14 @@
 #include "cocos2d.h"
 USING_NS_CC;
 
-enum eInvitedIconStats
-{
-    kINVITEDICONSTATE_UNSENT,
-    kINVITEDICONSTATE_SENT
-};
+enum eInvitedIconStats { kINVITEDICONSTATE_UNSENT, kINVITEDICONSTATE_SENT };
 
-class InvitedIconSprite : public cocos2d::CCSprite
-{
+class InvitedIconSprite : public cocos2d::CCSprite {
 private:
-
     eInvitedIconStats stat;
-    
+
     void onEnter();
+
 public:
     static InvitedIconSprite *create();
     static InvitedIconSprite *create(eInvitedIconStats stat);

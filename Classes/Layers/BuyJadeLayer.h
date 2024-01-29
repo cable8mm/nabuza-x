@@ -9,16 +9,15 @@
 #ifndef __NabuzaI__BuyJadeLayer__
 #define __NabuzaI__BuyJadeLayer__
 
-//#import <Foundation/Foundation.h>
+// #import <Foundation/Foundation.h>
 
-#include "cocos2d.h"
 #include "cocos-ext.h"
+#include "cocos2d.h"
 
 USING_NS_CC;
 USING_NS_CC_EXT;
 
-class BuyJadeLayer : public cocos2d::CCLayerColor
-{
+class BuyJadeLayer : public cocos2d::CCLayerColor {
 private:
     ~BuyJadeLayer(void);
     bool init();
@@ -26,15 +25,15 @@ private:
     void close();
     void registCoupon();
     void onBuyJadeButtonTapped(CCObject *object);
-    
+
     void onHttpRequestCompleted(CCHttpClient *sender, CCHttpResponse *response);
-    
+
     // Notification Funtions
-    void purchasingIAP(CCObject* obj);
-    void purchasedIAP(CCObject* obj);
-    void failedIAP(CCObject* obj);
-    void restoredIAP(CCObject* obj);
-    
+    void purchasingIAP(CCObject *obj);
+    void purchasedIAP(CCObject *obj);
+    void failedIAP(CCObject *obj);
+    void restoredIAP(CCObject *obj);
+
     // Touches
     bool ccTouchBegan(CCTouch *touch, CCEvent *pEvent);
     void registerWithTouchDispatcher();

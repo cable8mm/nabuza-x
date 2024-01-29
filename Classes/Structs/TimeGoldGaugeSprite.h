@@ -12,8 +12,7 @@
 #include "cocos2d.h"
 USING_NS_CC;
 
-class TimeGoldGaugeSprite : public cocos2d::CCSprite
-{
+class TimeGoldGaugeSprite : public cocos2d::CCSprite {
 public:
     TimeGoldGaugeSprite();
     static TimeGoldGaugeSprite* createWithCustom();
@@ -22,6 +21,7 @@ public:
     void addValue(unsigned int v);
     void minusValue(unsigned int v);
     void isNabuzaTime(bool yn);
+
 private:
     CCPoint originPosition;
     unsigned int value;

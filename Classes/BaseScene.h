@@ -9,23 +9,24 @@
 #ifndef __NabuzaI__BaseScene__
 #define __NabuzaI__BaseScene__
 
-#include "cocos2d.h"
-#include "CCScale9Sprite.h"
 #include "CCControlButton.h"
+#include "CCScale9Sprite.h"
+#include "cocos2d.h"
 
 USING_NS_CC;
 USING_NS_CC_EXT;
 
-class BaseScene : public cocos2d::CCLayer
-{
+class BaseScene : public cocos2d::CCLayer {
 private:
     bool init();
     void onEnter();
+
 public:
     ~BaseScene();
-    // there's no 'id' in cpp, so we recommend returning the class instance pointer
+    // there's no 'id' in cpp, so we recommend returning the class instance
+    // pointer
     static cocos2d::CCScene* scene();
-    
+
     // implement the "static node()" method manually
     CREATE_FUNC(BaseScene);
 };

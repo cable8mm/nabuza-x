@@ -12,13 +12,13 @@
 #include "cocos2d.h"
 USING_NS_CC;
 
-class ItemInfoSprite : public cocos2d::CCSprite
-{
+class ItemInfoSprite : public cocos2d::CCSprite {
 private:
     unsigned int itemKey;
     unsigned int playerLevel;
     bool init();
     ItemInfoSprite();
+
 public:
     CREATE_FUNC(ItemInfoSprite);
     void setItemKeyWithLevel(unsigned int itemKey, unsigned int playerLevel);

@@ -8,27 +8,23 @@
 
 #include "NeedForGameMemory.h"
 
-static NeedForGameMemory *s_SharedNeedForGameMemory = NULL;
+static NeedForGameMemory* s_SharedNeedForGameMemory = NULL;
 
 NeedForGameMemory::NeedForGameMemory() {
-    
 }
 
-NeedForGameMemory* NeedForGameMemory::sharedNeedForGameMemory(void)
-{
-    if (!s_SharedNeedForGameMemory)
-    {
+NeedForGameMemory* NeedForGameMemory::sharedNeedForGameMemory(void) {
+    if (!s_SharedNeedForGameMemory) {
         s_SharedNeedForGameMemory = new NeedForGameMemory();
         s_SharedNeedForGameMemory->init();
     }
-    
+
     return s_SharedNeedForGameMemory;
 }
 
-bool NeedForGameMemory::init()
-{
+bool NeedForGameMemory::init() {
     this->reset();
-    
+
     return true;
 }
 
@@ -52,7 +48,7 @@ unsigned int NeedForGameMemory::getCardCount() {
 }
 
 void NeedForGameMemory::reset() {
-    this->jadeCount  = 0;
+    this->jadeCount = 0;
     this->cardCount = 0;
 }
 

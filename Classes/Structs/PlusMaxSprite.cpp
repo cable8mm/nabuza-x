@@ -12,10 +12,11 @@
 #define TEXTURE_SIZE_H 50.
 
 PlusMaxSprite* PlusMaxSprite::create() {
-    PlusMaxSprite *pobSprite = new PlusMaxSprite;
-    
-    if (pobSprite && pobSprite->initWithFile("letter_mini_btn.png", CCRect(0., 0., TEXTURE_SIZE_W, TEXTURE_SIZE_H)))
-    {
+    PlusMaxSprite* pobSprite = new PlusMaxSprite;
+
+    if (pobSprite && pobSprite->initWithFile(
+                         "letter_mini_btn.png",
+                         CCRect(0., 0., TEXTURE_SIZE_W, TEXTURE_SIZE_H))) {
         pobSprite->autorelease();
         return pobSprite;
     }

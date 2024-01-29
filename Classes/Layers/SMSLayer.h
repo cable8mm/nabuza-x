@@ -12,14 +12,13 @@
 #include "cocos2d.h"
 USING_NS_CC;
 
-class SMSLayer : public cocos2d::CCLayer
-{
+class SMSLayer : public cocos2d::CCLayer {
 private:
     //        CCMenu * menu;
     //        Label *label;
     int mWebViewLoadCounter;
     std::string message;
-    
+
 public:
     SMSLayer();
     ~SMSLayer();

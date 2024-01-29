@@ -12,12 +12,12 @@
 #include "cocos2d.h"
 USING_NS_CC;
 
-class ItemSprite : public cocos2d::CCSprite
-{
+class ItemSprite : public cocos2d::CCSprite {
 private:
     unsigned int key;
     bool isActive;
     unsigned int needJadeCount;
+
 public:
     static ItemSprite* createWithItemKey(unsigned int key);
     void setIsActive(bool isActive);

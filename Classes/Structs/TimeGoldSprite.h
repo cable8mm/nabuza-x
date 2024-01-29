@@ -12,11 +12,11 @@
 #include "cocos2d.h"
 USING_NS_CC;
 
-class TimeGoldSprite : public cocos2d::CCSprite
-{
+class TimeGoldSprite : public cocos2d::CCSprite {
 private:
     void nabuzaTimeDoneCallback();
     void nabuzaTimeFinishCallback();
+
 public:
     TimeGoldSprite();
     static TimeGoldSprite* createWithCustom();
@@ -25,9 +25,9 @@ public:
     unsigned currentColor;
     void setIsNabuzaTime(bool yn);
     void startAnimation();
+
 private:
     void toogleColor();
 };
-
 
 #endif /* defined(__NabuzaI__TimeGoldSprite__) */

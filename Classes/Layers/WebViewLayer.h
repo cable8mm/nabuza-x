@@ -12,12 +12,12 @@
 #include "cocos2d.h"
 USING_NS_CC;
 
-class WebViewLayer : public cocos2d::CCLayer
-{
+class WebViewLayer : public cocos2d::CCLayer {
 private:
     //        CCMenu * menu;
     //        Label *label;
     int mWebViewLoadCounter;
+
 public:
     WebViewLayer();
     ~WebViewLayer();

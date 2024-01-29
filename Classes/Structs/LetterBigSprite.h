@@ -12,12 +12,13 @@
 #include "cocos2d.h"
 USING_NS_CC;
 
-class LetterBigSprite : public cocos2d::CCSprite
-{
+class LetterBigSprite : public cocos2d::CCSprite {
 private:
     SEL_CallFunc selector;
+
 public:
-    static LetterBigSprite* createWithPosition(CCPoint pt, SEL_CallFunc selector);
+    static LetterBigSprite* createWithPosition(CCPoint pt,
+                                               SEL_CallFunc selector);
     void runAnimation();
 };
 

@@ -12,18 +12,19 @@
 #include "cocos2d.h"
 USING_NS_CC;
 
-class ItemChoosedSprite : public cocos2d::CCSprite
-{
+class ItemChoosedSprite : public cocos2d::CCSprite {
 private:
     ItemChoosedSprite();
     int itemKey;
     unsigned int positionKey;
+
 public:
     unsigned int needJadeCount;
-    static ItemChoosedSprite* createWithKeys(int itemKey, unsigned int positionKey);
+    static ItemChoosedSprite* createWithKeys(int itemKey,
+                                             unsigned int positionKey);
 
     // Getters / Setters
-//    void setItemKey(int key);
+    //    void setItemKey(int key);
     int getItemKey();
     void setPositionKey(unsigned int key);
     unsigned int getPositionKey();

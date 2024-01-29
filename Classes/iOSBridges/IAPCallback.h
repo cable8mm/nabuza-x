@@ -13,25 +13,21 @@
 
 using namespace cocos2d;
 
-namespace iOSBridge
-{
-	namespace Callbacks
-	{
-		struct IAPItem
-		{
-			std::string identification;
-			std::string name;
-			std::string localizedTitle;
-			std::string localizedDescription;
-			float price;
-		};
-        
-		class IAPCallback
-		{
-		public:
-			virtual void productsDownloaded(CCArray *products);
-		};
-	}
-}
+namespace iOSBridge {
+namespace Callbacks {
+struct IAPItem {
+    std::string identification;
+    std::string name;
+    std::string localizedTitle;
+    std::string localizedDescription;
+    float price;
+};
+
+class IAPCallback {
+public:
+    virtual void productsDownloaded(CCArray *products);
+};
+}  // namespace Callbacks
+}  // namespace iOSBridge
 
 #endif /* defined(__NabuzaI__IAPCallback__) */

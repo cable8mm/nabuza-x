@@ -9,8 +9,8 @@
 #ifndef __NabuzaI__BuddyStorage__
 #define __NabuzaI__BuddyStorage__
 
-#include "cocos2d.h"
 #include "cocos-ext.h"
+#include "cocos2d.h"
 USING_NS_CC;
 USING_NS_CC_EXT;
 
@@ -19,8 +19,9 @@ USING_NS_CC_EXT;
 class BuddyStorage : public CCObject {
 private:
     bool init();
+
 public:
-    CCArray *buddies;
+    CCArray* buddies;
 
     BuddyStorage();
     ~BuddyStorage();

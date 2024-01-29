@@ -12,10 +12,8 @@
 #include "cocos2d.h"
 USING_NS_CC;
 
-class TimeGoldCoinSprite : public cocos2d::CCSprite
-{
+class TimeGoldCoinSprite : public cocos2d::CCSprite {
 private:
-
 public:
     unsigned int mustTapCoinCount;
     static TimeGoldCoinSprite* createWithColor(unsigned int color);

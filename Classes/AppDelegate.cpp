@@ -1,14 +1,13 @@
 #include "AppDelegate.h"
+
 #include "LaunchingScene.h"
 
 USING_NS_CC;
 
 AppDelegate::AppDelegate() {
-
 }
 
-AppDelegate::~AppDelegate() 
-{
+AppDelegate::~AppDelegate() {
 }
 
 bool AppDelegate::applicationDidFinishLaunching() {
@@ -17,10 +16,11 @@ bool AppDelegate::applicationDidFinishLaunching() {
     CCEGLView* pEGLView = CCEGLView::sharedOpenGLView();
 
     pDirector->setOpenGLView(pEGLView);
-	
+
     // 해상도 수정
-    pDirector->getOpenGLView()->setDesignResolutionSize(480., 800., kResolutionExactFit);
-    
+    pDirector->getOpenGLView()->setDesignResolutionSize(480., 800.,
+                                                        kResolutionExactFit);
+
     // turn on display FPS
     pDirector->setDisplayStats(true);
 
@@ -28,15 +28,16 @@ bool AppDelegate::applicationDidFinishLaunching() {
     pDirector->setAnimationInterval(1.0 / 60);
 
     // create a scene. it's an autorelease object
-    CCScene *pScene = LaunchingScene::scene();
+    CCScene* pScene = LaunchingScene::scene();
 
     // run
     pDirector->runWithScene(pScene);
-    
+
     return true;
 }
 
-// This function will be called when the app is inactive. When comes a phone call,it's be invoked too
+// This function will be called when the app is inactive. When comes a phone
+// call,it's be invoked too
 void AppDelegate::applicationDidEnterBackground() {
     CCDirector::sharedDirector()->stopAnimation();
 

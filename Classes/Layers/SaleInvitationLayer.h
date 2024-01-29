@@ -9,16 +9,16 @@
 #ifndef __NabuzaI__SaleInvitationLayer__
 #define __NabuzaI__SaleInvitationLayer__
 
-#include "cocos2d.h"
 #include "cocos-ext.h"
+#include "cocos2d.h"
 
 USING_NS_CC;
 USING_NS_CC_EXT;
 
-class SaleInvitationLayer : public cocos2d::CCLayerColor
-{
+class SaleInvitationLayer : public cocos2d::CCLayerColor {
 public:
     CREATE_FUNC(SaleInvitationLayer);
+
 private:
     CCSprite *touchedSprite;
     void onEnter();

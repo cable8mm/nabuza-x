@@ -9,7 +9,7 @@
 #ifndef NabuzaI_ProjectConfig_h
 #define NabuzaI_ProjectConfig_h
 
-#define ANYTALE_DEBUG   1
+#define ANYTALE_DEBUG 1
 
 #if ANYTALE_DEBUG == 1
 

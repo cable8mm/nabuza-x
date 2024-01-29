@@ -12,12 +12,11 @@
 #include "cocos2d.h"
 using namespace cocos2d;
 
-class TimeOverLayer : public cocos2d::CCLayerColor
-{
+class TimeOverLayer : public cocos2d::CCLayerColor {
 public:
     void onEnter();
     CREATE_FUNC(TimeOverLayer);
-    
+
 private:
     void speechStart();
     void close();

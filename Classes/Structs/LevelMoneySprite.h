@@ -12,13 +12,10 @@
 #include "cocos2d.h"
 USING_NS_CC;
 
-class LevelMoneySprite : public cocos2d::CCSprite
-{
+class LevelMoneySprite : public cocos2d::CCSprite {
 private:
-    
 public:
     static LevelMoneySprite* createWithGoldCount(unsigned int goldCount);
 };
-
 
 #endif /* defined(__NabuzaI__LevelMoneySprite__) */

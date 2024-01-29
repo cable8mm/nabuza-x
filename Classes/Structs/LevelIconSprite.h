@@ -12,10 +12,8 @@
 #include "cocos2d.h"
 USING_NS_CC;
 
-class LevelIconSprite : public cocos2d::CCSprite
-{
+class LevelIconSprite : public cocos2d::CCSprite {
 private:
-
 public:
     static LevelIconSprite* createWithItemKey(unsigned int key);
     static LevelIconSprite* createWithGoldCount(unsigned int goldCount);

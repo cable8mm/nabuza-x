@@ -12,13 +12,13 @@
 #include "cocos2d.h"
 USING_NS_CC;
 
-class TimeNabuzaGaugeSprite : public cocos2d::CCSprite
-{
+class TimeNabuzaGaugeSprite : public cocos2d::CCSprite {
 public:
     bool addValueFromRollingCount(unsigned int rollingCoinCount);
     CREATE_FUNC(TimeNabuzaGaugeSprite);
     void initialize();
     void isNabuzaTime(bool yn);
+
 private:
     TimeNabuzaGaugeSprite(void);
     bool init();

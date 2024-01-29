@@ -9,46 +9,48 @@
 #ifndef __NabuzaI__SendingGiftLayer__
 #define __NabuzaI__SendingGiftLayer__
 
-#include "cocos2d.h"
 #include "cocos-ext.h"
+#include "cocos2d.h"
 
 USING_NS_CC;
 USING_NS_CC_EXT;
 
-class SendingGiftLayer : public cocos2d::CCLayerColor, public CCTableViewDataSource, public CCTableViewDelegate, public CCScrollViewDelegate
-{
+class SendingGiftLayer : public cocos2d::CCLayerColor,
+                         public CCTableViewDataSource,
+                         public CCTableViewDelegate,
+                         public CCScrollViewDelegate {
 public:
     CREATE_FUNC(SendingGiftLayer);
-#pragma -- CCTableViewDataSource
-    
+#pragma-- CCTableViewDataSource
+
     CCSize cellSizeForTable(CCTableView *table);
-    
-    CCTableViewCell* tableCellAtIndex(CCTableView *table, unsigned int idx);
-    
+
+    CCTableViewCell *tableCellAtIndex(CCTableView *table, unsigned int idx);
+
     unsigned int numberOfCellsInTableView(CCTableView *table);
-    
+
     bool hasFixedCellSize();
-    
+
     CCSize cellSizeForIndex(CCTableView *table, unsigned int idx);
-    
-#pragma -- CCTableViewDelegate
-    
-    virtual void tableCellTouched(CCTableView* table, CCTableViewCell* cell);
-    
-#pragma -- CCScrollViewDelegate
-    
-    virtual void scrollViewDidScroll(CCScrollView* view);
-    virtual void scrollViewDidZoom(CCScrollView* view);
-    
+
+#pragma-- CCTableViewDelegate
+
+    virtual void tableCellTouched(CCTableView *table, CCTableViewCell *cell);
+
+#pragma-- CCScrollViewDelegate
+
+    virtual void scrollViewDidScroll(CCScrollView *view);
+    virtual void scrollViewDidZoom(CCScrollView *view);
+
 private:
     CCArray *buddies;
     CCPoint tappedPoint;
     int useGiftCellIdx;
-    
+
     void onEnter();
     void speechStart();
     void close();
-    
+
     // Touches
     bool ccTouchBegan(CCTouch *touch, CCEvent *pEvent);
     void ccTouchCancelled(CCTouch *touch, CCEvent *pEvent);
@@ -65,6 +67,5 @@ public:
     int type;
     bool isUsed;
 };
-
 
 #endif /* defined(__NabuzaI__SendingGiftLayer__) */

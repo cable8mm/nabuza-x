@@ -9,18 +9,18 @@
 #ifndef __NabuzaI__BelowTapLayer__
 #define __NabuzaI__BelowTapLayer__
 
-#include "cocos2d.h"
 #include "cocos-ext.h"
+#include "cocos2d.h"
 USING_NS_CC;
 USING_NS_CC_EXT;
 
-class BelowTapLayer : public cocos2d::CCLayerColor
-{
+class BelowTapLayer : public cocos2d::CCLayerColor {
 public:
     CREATE_FUNC(BelowTapLayer);
     static BelowTapLayer *createWithIsStartGame(bool v);
     bool isGameStart;
     BelowTapLayer();
+
 private:
     CCSprite *touchedSprite;
     void onEnter();

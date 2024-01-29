@@ -7,32 +7,26 @@
 //
 
 #include "SMSLayer.h"
-#include "UIMessageViewBridge.h"
 
 #include "AnytaleHTTP.h"
+#include "UIMessageViewBridge.h"
 
-static UIMessageViewBridge *gUIMessageViewBridge=nil;
+static UIMessageViewBridge *gUIMessageViewBridge = nil;
 
-SMSLayer::SMSLayer()
-{
-    
+SMSLayer::SMSLayer() {
 }
 
-SMSLayer::~SMSLayer()
-{
+SMSLayer::~SMSLayer() {
     [gUIMessageViewBridge release];
 }
 
-void SMSLayer::webViewDidFinishLoad()
-{
-    
+void SMSLayer::webViewDidFinishLoad() {
 }
 
-SMSLayer* SMSLayer::create() {
+SMSLayer *SMSLayer::create() {
     SMSLayer *smsLayer = new SMSLayer;
-    
-    if (smsLayer && smsLayer->init())
-    {
+
+    if (smsLayer && smsLayer->init()) {
         smsLayer->autorelease();
         return smsLayer;
     }
@@ -40,12 +34,11 @@ SMSLayer* SMSLayer::create() {
     return NULL;
 }
 
-SMSLayer* SMSLayer::createWithMessage(std::string message) {
+SMSLayer *SMSLayer::createWithMessage(std::string message) {
     SMSLayer *smsLayer = new SMSLayer;
-    smsLayer->message   = message;
-    
-    if (smsLayer && smsLayer->init())
-    {
+    smsLayer->message = message;
+
+    if (smsLayer && smsLayer->init()) {
         smsLayer->autorelease();
         return smsLayer;
     }
@@ -53,20 +46,17 @@ SMSLayer* SMSLayer::createWithMessage(std::string message) {
     return NULL;
 }
 
-bool SMSLayer::init()
-{
+bool SMSLayer::init() {
     //////////////////////////////
     // 1. super init first
-    if ( !CCLayer::init() )
-    {
+    if (!CCLayer::init()) {
         return false;
     }
-    
-    NSString *message   = [NSString stringWithUTF8String:this->message.c_str()];
+
+    NSString *message = [NSString stringWithUTF8String:this->message.c_str()];
     gUIMessageViewBridge = [[UIMessageViewBridge alloc] init];
     [gUIMessageViewBridge setMessage:message];
-    [gUIMessageViewBridge setLayerWebView : this];
-    
+    [gUIMessageViewBridge setLayerWebView:this];
+
     return true;
 }
-

@@ -12,11 +12,11 @@
 #include "cocos2d.h"
 USING_NS_CC;
 
-class PlayTimeProgressSprite : public cocos2d::CCProgressTimer
-{
+class PlayTimeProgressSprite : public cocos2d::CCProgressTimer {
 public:
     static PlayTimeProgressSprite* createWithCustom(unsigned int duration);
     void start();
+
 private:
     float duration;
 };
