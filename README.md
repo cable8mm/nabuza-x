@@ -10,7 +10,7 @@ git clone https://github.com/cable8mm/nabuza-i.git
 cd nabuza-i
 ```
 
-Then build it. That's all.
+You must install cocos2d-x-2.2, and this sources put cocos2d-x's project folder then build it. That's all.
 
 ## Coding style
 
